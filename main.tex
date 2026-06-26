@@ -1,0 +1,234 @@
+
+%%  Sargunjot Kaur — Curriculum Vitae
+%%  Compiler: XeLaTeX or pdfLaTeX
+
+\documentclass[11pt, a4paper]{article}
+
+%  Packages 
+\usepackage[
+  top=1.8cm, bottom=1.8cm,
+  left=2cm,  right=2cm
+]{geometry}
+
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontawesome5}      
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Colours
+\definecolor{accent}{HTML}{3B28CC}   % electric blue
+\definecolor{muted}{HTML}{555555}
+\definecolor{rule}{HTML}{CCCCCC}
+
+%  Hyperlinks 
+\hypersetup{
+  colorlinks = true,
+  urlcolor   = accent,
+  linkcolor  = accent,
+}
+
+%  Section formatting 
+\titleformat{\section}
+  {\large\bfseries\color{accent}}    % format
+  {}                                  % label
+  {0pt}                               % sep
+  {}                                  % before
+  [\vspace{2pt}\color{rule}\hrule\vspace{4pt}]  % after
+
+\titlespacing{\section}{0pt}{14pt}{6pt}
+
+% Custom commands 
+
+% \cventry{dates}{title}{institution}{location}{details}
+\newcommand{\cventry}[5]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#2} & \textit{\small #1} \\
+    \textit{\small #3}, \textit{\small #4} & \\
+  \end{tabularx}
+  \vspace{2pt}
+  #5
+  \vspace{6pt}
+}
+
+% \cvproject{name}{link}{tags}{description}
+\newcommand{\cvproject}[4]{%
+  \textbf{#1}%
+  \ifx&#2&\else\ \textcolor{muted}{\small|\ \href{#2}{GitHub}}\fi
+  \hfill \textcolor{muted}{\small\textit{#3}}\\[2pt]
+  #4
+  \vspace{6pt}
+}
+
+% Inline tag
+\newcommand{\cvtag}[1]{%
+  \textcolor{accent}{\small\textbf{#1}}%
+}
+
+% No-indent bullet list
+\newenvironment{cvlist}{%
+  \begin{itemize}[leftmargin=1.4em, itemsep=1pt, parsep=0pt, topsep=2pt]
+}{%
+  \end{itemize}
+}
+
+
+\begin{document}
+\pagestyle{empty}
+
+% HEADER
+
+\begin{center}
+  {\Huge\bfseries Sargunjot Kaur}\\[6pt]
+  {\large\color{accent} BEng Software Engineering Student}\\[8pt]
+  \small
+  \faPhone\ \href{tel:+4917790037 10}{+49\,177\,9003710}\quad
+  \faEnvelope\ \href{mailto:sargunjotkaur07@outlook.com}{sargunjotkaur07@outlook.com}\quad
+  \faGithub\ \href{https://github.com/Sargunjot-Kaur}{Sargunjot-Kaur}\quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/sargunjot-kaur}{Sargunjot Kaur}\quad
+  \faMapMarker*\ Berlin, Germany
+\end{center}
+
+\vspace{4pt}
+
+
+% ABOUT
+
+\section{About Me}
+
+BEng Software Engineering student with a strong foundation in programming, data structures,
+databases, and frontend development. Interested in cybersecurity, data science, software design,
+and applied informatics. Eager to continue developing technical and analytical skills through
+a practical and academically challenging bachelor's programme in Germany.
+
+
+% EDUCATION
+
+\section{Education}
+
+\cventry{2025 -- Present}{BEng Software Engineering}{GISMA University of Applied Sciences}{Berlin, Germany}{%
+  \begin{cvlist}
+    \item Completed coursework in \textbf{Data Structures \& Algorithms (100\%)},
+          \textbf{Database Systems \& Big Data (88\%)},
+          \textbf{Mathematical Foundations (92\%)}, and
+          \textbf{Foreign Languages -- German (97\%)}
+    \item Currently studying Project Management and Academic Writing
+  \end{cvlist}
+}
+
+\cventry{2024 -- 2025}{13\textsuperscript{th} Year (B.Sc.\ Non-Medical)}{GSSDGS Khalsa College}{Patiala, Punjab, India}{%
+  \begin{cvlist}
+    \item Subjects: Physics, Chemistry, Mathematics, and Computer Science
+    \item Semester 1 SGPA: \textbf{7.37}\ |\ Semester 2 SGPA: \textbf{7.70}
+    \item Achievement: \textbf{A+ grade in Computer Science} in both semesters
+  \end{cvlist}
+}
+
+\cventry{2022 -- 2024}{Senior-Secondary Education}{Sri Guru Tegh Bahadur Public School}{Patiala, Punjab, India}{%
+  \begin{cvlist}
+    \item Core subjects: Physics, Chemistry, Mathematics, and English
+    \item Studied Information Practices (IP) with exposure to
+          \cvtag{Python}, \cvtag{SQL}, \cvtag{NumPy}, and \cvtag{Pandas}
+    \item Developed foundational programming and data analysis skills through practical assignments
+  \end{cvlist}
+}
+
+\cventry{2021 -- 2022}{Secondary Education}{Play Ways Sr.\ Sec.\ School}{Patiala, Punjab, India}{%
+  \begin{cvlist}
+    \item Core subjects: Mathematics and Computer Science
+    \item Scored \textbf{96.7\%}, securing a place on the \textbf{Patiala merit list}
+  \end{cvlist}
+}
+
+
+% TECHNICAL SKILLS
+
+\section{Technical Skills}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\small}p{3.2cm} X@{}}
+  Programming \& Web &
+    Python,\ JavaScript,\ HTML,\ CSS,\ SQL \\
+  Libraries &
+    Pandas,\ NumPy \\
+  Databases &
+    MySQL,\ relational database design \\
+  Concepts &
+    Data structures \& algorithms,\ input validation,\
+    backend basics,\ data analysis \\
+\end{tabularx}
+\renewcommand{\arraystretch}{1}
+
+
+% PROJECTS
+
+\section{Projects}
+
+\cvproject%
+  {PIC Education -- Database System}%
+  {https://github.com/Sargunjot-Kaur}%
+  {MySQL · Schema Design · SQL}%
+  {%
+    \begin{cvlist}
+      \item Built a relational database for a PTE practice platform managing student data,
+            test content, and performance tracking
+      \item Designed schema supporting multiple test attempts and structured scoring
+            across Reading, Writing, Listening, and Speaking sections
+    \end{cvlist}
+  }
+
+\cvproject%
+  {Password Strength Checker}%
+  {https://github.com/Sargunjot-Kaur}%
+  {Python · Input Validation · Security}%
+  {%
+    \begin{cvlist}
+      \item Developed a real-time password evaluator applying security rules and
+            input validation logic
+    \end{cvlist}
+  }
+
+
+% CERTIFICATIONS
+
+\section{Certifications}
+
+\begin{cvlist}
+  \item \textbf{German Language Certification (B1 Writing)} -- Goethe-Institut, India
+  \item \textbf{Web Designing \& WordPress Development} -- Practical experience via
+        \href{https://iwebwizsolutions.in}{iwebwizsolutions.in}
+  \item \textbf{IELTS Academic: 8.0 Bands (C1)} -- English proficiency
+\end{cvlist}
+
+
+
+% LANGUAGES
+
+
+\section{Languages}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\small}p{3.2cm} X@{}}
+  English & Academic 8.0 / C1 (IELTS) \\
+  German  & B1 Writing -- Goethe-Institut certified \\
+\end{tabularx}
+
+
+
+% LEADERSHIP & EXTRACURRICULARS
+
+
+\section{Leadership \& Extracurriculars}
+
+\begin{cvlist}
+  \item Served as \textbf{Class Representative (CR)}, liaising between students and faculty
+        to coordinate academic matters and resolve issues
+  \item Appointed \textbf{School Prefect}; participated in an inter-college debate competition
+        at Khalsa College, developing communication and public speaking skills
+\end{cvlist}
+
+\end{document}

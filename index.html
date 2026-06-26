@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sargunjot Kaur — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!--  NAV  -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">sk.</div>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#home"    class="nav__link active" data-page="home">Home</a></li>
+      <li><a href="#about"   class="nav__link"        data-page="about">About</a></li>
+      <li><a href="#projects"class="nav__link"        data-page="projects">Projects</a></li>
+      <li><a href="#contact" class="nav__link"        data-page="contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page -->
+  <section class="section" id="home">
+    <div class="home__split">
+
+      <!-- LEFT: blue -->
+      <div class="home__left">
+        <div class="home__eyebrow">BEng Software Engineering</div>
+        <h1 class="home__title">
+          Software<br/>
+          <span class="home__title--accent">Engineer.</span>
+        </h1>
+        <p class="home__sub">
+          I build solid, scalable software with a strong foundation in data structures, databases, and frontend development.
+        </p>
+        <div class="home__ctas">
+          <a href="https://github.com/Sargunjot-Kaur" target="_blank" rel="noopener" class="btn btn--lime">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="Sargun_cv.pdf" download class="btn btn--outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v13M7 11l5 5 5-5"/><path d="M3 19h18"/></svg>
+            Download CV
+          </a>
+        </div>
+        <!-- decorative shapes -->
+        <div class="shape shape--wave home__shape1"></div>
+        <div class="shape shape--dots home__shape2"></div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="home__right">
+        <div class="home__photo-frame">
+          <div class="home__photo-placeholder">
+            <img src="./Sargun.jpeg" alt="">
+          </div>
+        </div>
+        <div class="home__stats">
+          <div class="stat">
+            <span class="stat__num">100%</span>
+            <span class="stat__label">DSA coursework</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">96.7%</span>
+            <span class="stat__label">Secondary score</span>
+          </div>
+        </div>
+        <!-- decorative shapes -->
+        <div class="shape shape--step home__shape3"></div>
+        <div class="shape shape--square home__shape4"></div>
+        <div class="shape shape--diamonds home__shape5"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Page -->
+  <section class="section" id="about">
+    <div class="about__inner">
+
+      <div class="about__header">
+        <span class="section-eyebrow">Who I am</span>
+        <h2 class="section-title">About <span class="accent">Me.</span></h2>
+      </div>
+
+      <div class="about__grid">
+
+        <div class="about__bio card">
+          <p>
+            I'm a BEng Software Engineering student at <strong>GISMA University of Applied Sciences</strong>, Berlin, with a genuine curiosity for cybersecurity, data science, and software design. I care about writing clean, purposeful code — not just making things work, but making them work <em>well</em>.
+          </p>
+          <p>
+            Originally from Patiala, Punjab, India, I moved to Germany to pursue a technically rigorous programme in an international environment. I bring the same discipline I applied in academics — a <strong>96.7% secondary score</strong> and placement on the Patiala merit list — to every project I take on.
+          </p>
+        </div>
+
+        <div class="about__skills card">
+          <h3 class="card-title">Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <span class="skill-group__label">Languages</span>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group__label">Libraries</span>
+              <div class="tags">
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group__label">Databases</span>
+              <div class="tags">
+                <span class="tag">MySQL</span>
+                <span class="tag">Relational Design</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-group__label">Concepts</span>
+              <div class="tags">
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">Input Validation</span>
+                <span class="tag">Data Analysis</span>
+                <span class="tag">Backend Basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__edu card">
+          <h3 class="card-title">Education</h3>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2025 – Present</span>
+                <strong>BEng Software Engineering</strong>
+                <span>GISMA University of Applied Sciences, Berlin</span>
+                <span class="timeline__note">DSA 100% · DB &amp; Big Data 88% · Maths 92% · German 97%</span>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2024 – 2025</span>
+                <strong>13th Year — B.Sc. Non-Medical</strong>
+                <span>GSSDGS Khalsa College, Patiala</span>
+                <span class="timeline__note">SGPA: 7.70 · A+ in Computer Science</span>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2022 – 2024</span>
+                <strong>Senior-Secondary Education</strong>
+                <span>Sri Guru Tegh Bahadur Public School, Patiala</span>
+                <span class="timeline__note">Physics · Chemistry · Maths · IP (Python, SQL)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__certs card">
+          <h3 class="card-title">Certifications &amp; Languages</h3>
+          <ul class="cert-list">
+            <li>
+              <span class="cert-icon">🇩🇪</span>
+              <div>
+                <strong>German B1 Writing</strong>
+                <span>Goethe-Institut, India</span>
+              </div>
+            </li>
+            <li>
+              <span class="cert-icon">🌐</span>
+              <div>
+                <strong>Web Design &amp; WordPress</strong>
+                <span>iwebwizsolutions.in</span>
+              </div>
+            </li>
+            <li>
+              <span class="cert-icon">📝</span>
+              <div>
+                <strong>IELTS Academic — 8.0 Bands (C1)</strong>
+                <span>English proficiency</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- peojects Page -->
+  <section class="section" id="projects">
+    <div class="projects__inner">
+      <div class="projects__header">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects<span class="accent">.</span></h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Database · SQL · Python</span>
+            <a href="https://github.com/Sargunjot-Kaur" target="_blank" rel="noopener" class="project-card__link" aria-label="View on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-card__title">PIC Education — Database System</h3>
+          <p class="project-card__desc">
+            Relational database for a PTE practice platform managing student data, test content, and performance tracking. Schema supports multiple test attempts and structured scoring across all four skills.
+          </p>
+          <div class="project-card__footer">
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Schema Design</span>
+            <span class="tech-tag">SQL</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__top">
+            <span class="project-card__tag">Security · Python</span>
+            <a href="https://github.com/Sargunjot-Kaur" target="_blank" rel="noopener" class="project-card__link" aria-label="View on GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+          </div>
+          <h3 class="project-card__title">Password Strength Checker</h3>
+          <p class="project-card__desc">
+            Real-time password evaluator that applies security rules and input validation logic to give users immediate, actionable feedback on their password strength.
+          </p>
+          <div class="project-card__footer">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Input Validation</span>
+            <span class="tech-tag">Security</span>
+          </div>
+        </article>
+
+        <!-- Placeholder card (easy to fill in) -->
+        <article class="project-card project-card--placeholder">
+          <div class="project-card__top">
+            <span class="project-card__tag">Coming soon</span>
+          </div>
+          <h3 class="project-card__title">Next Project</h3>
+          <p class="project-card__desc">
+            Currently in progress. Check back soon or follow on GitHub to stay updated.
+          </p>
+          <div class="project-card__footer">
+            <a href="https://github.com/Sargunjot-Kaur" target="_blank" rel="noopener" class="btn btn--lime btn--sm">View GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Page -->
+  <section class="section" id="contact">
+    <div class="contact__inner">
+
+      <div class="contact__header">
+        <span class="section-eyebrow">Get in touch</span>
+        <h2 class="section-title">Contact<span class="accent">.</span></h2>
+        <p class="contact__lead">Open to opportunities, collaborations, and conversations. Reach out through any of the channels below.</p>
+      </div>
+
+      <div class="contact__grid">
+
+        <a href="mailto:sargunjotkaur07@outlook.com" class="contact-card">
+          <div class="contact-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <div class="contact-card__text">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">sargunjotkaur07@outlook.com</span>
+          </div>
+          <div class="contact-card__arrow">→</div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/sargunjot-kaur" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-card__text">
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">Sargunjot Kaur</span>
+          </div>
+          <div class="contact-card__arrow">→</div>
+        </a>
+
+        <a href="https://github.com/Sargunjot-Kaur" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </div>
+          <div class="contact-card__text">
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">Sargunjot-Kaur</span>
+          </div>
+          <div class="contact-card__arrow">→</div>
+        </a>
+
+        <div class="contact-card contact-card--location">
+          <div class="contact-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-card__text">
+            <span class="contact-card__label">Location</span>
+            <span class="contact-card__value">Berlin, Germany</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>© 2026 Sargunjot Kaur</span>
+      <span>Built with purpose.</span>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
